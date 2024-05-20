@@ -186,6 +186,34 @@ div h1 {
     font-weight: 900;
 }
 
+#experience-section h1{
+    margin-top: 7rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+}
+#experience-section{
+    width: 100%;
+    /* color: #e81cff; */
+    background-color: black;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+
+#exp-card{
+    width: 85%;
+    height: 104px;
+    background: transparent;
+    border: 0.1px solid rgb(255,255,255,255);
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 575px) {
     #svg-group img {
         width: 75vw;
