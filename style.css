@@ -119,6 +119,73 @@ div h1 {
     margin-top: 2rem;
 }
 
+
+.skill-card {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    background-color: white;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.skill-card .text {
+    margin-bottom: 0;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.skill-card svg path {
+    transition: 400ms;
+}
+
+.skill-card:hover {
+    background-color: #181717;
+}
+
+.skill-card:hover .text {
+    color: white;
+}
+
+.skill-card:hover svg path {
+    fill: #ffffff;
+}
+
+#div-skill-cards{
+    display: flex;
+    flex-direction: row;
+    column-gap: 7.2rem;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#skills-section h1{
+    margin-top: 7rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    color: #181717;
+    margin-bottom: 5rem;
+}
+
+#skills-bold{
+    font-weight: 900;
+}
+
 @media screen and (max-width: 575px) {
     #svg-group img {
         width: 75vw;
@@ -152,5 +219,16 @@ div h1 {
     }
     #hero-section div{
         margin-top: 1rem;
+    }
+    .skill-card{
+        height: 6rem;
+        width: 6rem;    
+    }
+    #skills-section h1{
+        font-size: 2rem;
+    }
+    #skills-section{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
