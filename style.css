@@ -165,7 +165,7 @@ div h1 {
 #div-skill-cards{
     display: flex;
     flex-direction: row;
-    column-gap: 7.2rem;
+    column-gap: 5.5rem;
     row-gap: 25px;
     flex-wrap: wrap;
     align-items: center;
@@ -187,14 +187,15 @@ div h1 {
 }
 
 #experience-section h1{
-    margin-top: 7rem;
+    margin-top: 5rem;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 3rem;
     color: #ffffff;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
 }
 #experience-section{
     width: 100%;
@@ -208,10 +209,38 @@ div h1 {
 
 #exp-card{
     width: 85%;
-    height: 104px;
+    height: 180px;
+    box-sizing: border-box;
     background: transparent;
     border: 0.1px solid rgb(255,255,255,255);
     border-radius: 10px;
+    color: #ffffff;
+}
+
+.exp-card-text{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+#exp-card-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#volansys-img{
+    width: 180px;
+    height: 40px;
+}
+
+#exp-card-body{
+    text-align: left;
+    padding: 8px;
 }
 
 @media screen and (max-width: 575px) {
