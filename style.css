@@ -192,7 +192,7 @@ div h1 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     color: #ffffff;
     margin-bottom: 4rem;
     padding-top: 4rem;
@@ -207,9 +207,12 @@ div h1 {
    left: 0;
 }
 
-#exp-card{
-    width: 85%;
-    height: 180px;
+.exp-card{
+    /* width: 85%; */
+    width: 80vw;
+    /* height: 190px; */
+    /* height: 13vw; */
+    height: 13rem;
     box-sizing: border-box;
     background: transparent;
     border: 0.1px solid rgb(255,255,255,255);
@@ -226,21 +229,29 @@ div h1 {
     color: #ffffff;
 }
 
-#exp-card-head{
+.exp-card-head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#volansys-img{
+.exp-card-head span {
+    font-size: 1.5vw;
+}
+
+.volansys-img{
     width: 180px;
     height: 40px;
 }
 
-#exp-card-body{
+.exp-card-body{
     text-align: left;
     padding: 8px;
+}
+
+.exp-card-body p {
+    font-size: 1.1vw;
 }
 
 @media screen and (max-width: 575px) {
@@ -287,5 +298,37 @@ div h1 {
     #skills-section{
         margin-top: 3rem;
         margin-bottom: 3rem;
+    }
+    .exp-card{
+        height: 9rem !important;
+    }
+    .exp-card-text{
+        font-size: 0.8rem;
+    }
+    .exp-card-head span {
+        font-size: 1.5vw;
+    }
+    .volansys-img{
+        width: 90px !important;
+        height: 25px !important;
+    }
+    .exp-card-body p {
+        font-size: 1.5vw !important;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .exp-card-body p {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .exp-card{
+        height: 10rem;
+    }
+    .volansys-img{
+        width: 120px;
+        height: 35px;
     }
 }
