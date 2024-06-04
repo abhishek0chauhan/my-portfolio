@@ -566,6 +566,22 @@ table {
     color: #ffffff !important;
 }
 
+footer{
+    background-color: #181717;
+    height: 5rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
 
 @media screen and (max-width: 575px) {
     #svg-group img {

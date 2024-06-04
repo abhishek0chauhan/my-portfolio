@@ -218,3 +218,17 @@ function fillTabel(projectText){
         `
     }
 }
+
+function downloadFile() {
+    fetch("Abhishek_Chauhan_Resume.pdf", { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+      .then(res => res.blob())
+      .then(res => {
+        const aElement = document.createElement('a');
+        aElement.setAttribute('download', 'Abhishek_Chauhan_Resume');
+        const href = URL.createObjectURL(res);
+        aElement.href = href;
+        aElement.setAttribute('target', '_blank');
+        aElement.click();
+        URL.revokeObjectURL(href);
+      });
+};
